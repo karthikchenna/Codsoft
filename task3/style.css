@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	background: black;
+}
+.calculator{
+	padding: 20px;
+	border-radius: 22px;
+	box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(255,255,255,0.2);
+}
+/*-----Title----*/
+#title{
+	color: white;
+	letter-spacing: 4px;
+	font-size: 24px;
+}
+
+/*------------Buttons---------*/
+.calculator form input{
+	border: none;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	box-shadow: -2px -1px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
+	background: transparent;
+	font-size: 24px;
+	font-weight: 600;		
+	color: white;
+	cursor: pointer;
+	margin: 8px;
+}
+/*----------output display--*/
+form .display{
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px 0px;
+}
+form .display input{
+	text-align: right;
+	flex: 1;
+	font-size: 45px;
+	border-radius: 12px;
+	height: 80px;
+}
+
+/*---equal button-----*/
+form input.equal{
+	background-color: orange;
+	color: black;
+	width: 140px;
+	border-radius: 12px;
+}
+form input.operator{
+	color: green;
+}
+
+/*----------footer-------*/
+#footer{
+	margin-top: 20px;
+	color: beige;
+	font-size:18px;
+}
+#footer span{
+	font-size: 22px;
+	color: orange;
+}
+
+
+
+
+
+
+
+
