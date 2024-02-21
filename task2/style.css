@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500;6..12,800&family=Poppins:wght@300;400;500&family=Roboto+Condensed:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.landing{
+    width: 100%;
+}   
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.logo a{
+    color: white;   
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.menu {
+    height: 40px;
+    width: 35%;
+    padding-right: 20px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul a{
+    text-decoration: none;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    color: #fff;
+    border-bottom: 3px solid transparent;
+    transition: all ease 1s;
+}
+ul li:hover{
+    border-bottom: 3px solid white;
+}
+
+/* ----------------main section--- */
+.details{
+    margin-top: 180px;
+    padding-left: 40px;
+}
+#title{
+    color: white;
+    font-size: 5rem;
+    animation: title-animation 1s ease-in;
+}
+#desig{
+    color: lightcoral;
+    font-size: 3rem;
+    animation: desig-anim 1.5s ease-in;
+}
+.summary{
+    width: 60%;
+    /*margin-left: 40px;*/
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    word-spacing: 2px;
+}
+#resume{
+    /*margin-left: 40px;*/
+    background-color: powderblue;
+    padding: 12px 40px;
+    border-radius: 12px;
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#resume:hover{
+    background-color: lightcoral
+}
+.link-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    /*margin-left: 40px;*/
+    margin-top: 40px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all ease-in 0.3s;
+}
+.icon:hover{
+    background-color: white;
+    transition: all ease-in 0.3s;
+}
+.icon i{
+    font-size: 2.4rem;
+    color: white;
+    transition: all ease-in 0.3s;
+} 
+.icon i:hover{
+    color: black;
+    transition: all ease-in 0.3s;  
+}
+/* -------------------About section------------ */
+.about{
+    width: 100%;
+    margin-top: 40px;
+}
+.abt-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 370px;
+    margin-top: 60px;
+    background-color: grey;
+    background-size: cover;
+    border-radius: 24px;
+}
+.container{
+    width: 60%;
+    height: 50%;
+    margin-left: 80px;
+}
+#about{
+    color: powderblue;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.container #name{
+    margin-top: 10px;
+}
+.container p{
+    color: white;
+    font-size: 1.2rem;
+}
+.container h2{
+    margin-top: 10px;
+    font-size: 2rem;
+    color: powderblue;
+    text-decoration-line: underline;
+}
+.container h3{
+    font-size: 2rem;    
+    color: white;
+}
+.container h4{
+    font-size: 1.3rem;
+    color: lightcoral;
+}
+.container h5{
+    font-size: 1rem;   
+    color: grey; 
+}
+.skills-container{
+    margin-top: 40px;
+    width: 100%;
+    /*height: 250px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-container h2{
+    color: white;
+    font-size: 3rem;
+    text-decoration: underline;
+
+}
+.skill-logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+}
+.skill-logos img{
+    height: 100px;
+}
+.skill-title{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+.skill-title li{
+    list-style: none;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* -------PROJECT SECTION---------- */
+.project-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
+}
+.project-section h3{
+    color: #fff;
+    margin-top: 60px;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 250px;
+    height: 370px;
+    border-radius: 24px;
+    box-shadow:  5px 5px 5px beige, -1px -2px 5px beige;
+    transition: all 0.3s;
+}
+.card:hover{
+    scale: 1.05;
+    transition: all 0.3s;
+}
+.proj-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 330px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.proj-image img{
+    width: 220px;
+    height: 300px;
+}
+.card h4{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.card a{
+    color: lightcoral;
+}
+/* ----------Contact Section--------------- */
+
+#contact h2{
+    color: white;
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-top: 100px;
+}
+
+.contact-container{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-card{
+    height: 150px;
+    width: 150px;
+    box-shadow:  4px 4px 8px white, -2px -2px 8px white;
+    transition:all ease 0.3s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-card a img{
+    scale:1.5;
+}
+.contact-card:hover{
+    scale:1.2;
+}
+
+/*------------Footer-------------*/
+.copyright{
+    margin-top: 80px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+}
+.copyright p{
+    font-size: 1rem;
+    font-weight: 600;
+}
